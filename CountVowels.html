@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s = prompt("enter the string");
+        var count = 0;
+        for(var i of s){
+            if (i === "a" || i === "i" || i === "e" || i === "o" || i === "u") {
+                    count++;
+                }
+        }
+        document.write(count);
+    </script>
+    <h1>using function</h1>
+    <script>
+        function countvowels(s) {
+            let count = 0;
+            for (const i of s) {
+                if (i === "a" || i === "i" || i === "e" || i === "o" || i === "u") {
+                    count++;
+                }
+            }
+            document.write(count);
+        }
+        countvowels(prompt("enter string"));
+    </script>
+</body>
+</html>
